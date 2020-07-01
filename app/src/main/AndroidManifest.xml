@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="my.springbliss.grocery">
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/springblisslogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode">
+        <activity android:name="my.springbliss.grocery.OrderActivity" />
+        <activity android:name="my.springbliss.grocery.MyorderItemList" />
+        <activity android:name="my.springbliss.grocery.MyorderActivity" />
+        <activity android:name="my.springbliss.grocery.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="my.springbliss.grocery.StartActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name="my.springbliss.grocery.RegisterActivity" />
+        <activity android:name="my.springbliss.grocery.LoginActivity" />
+        <activity android:name="my.springbliss.grocery.DescriptionActivity" />
+        <activity android:name="my.springbliss.grocery.HandWash" />
+        <activity android:name="my.springbliss.grocery.Sanitizer" />
+        <activity android:name="my.springbliss.grocery.CartActivity" />
+        <activity
+            android:name="my.springbliss.grocery.MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
